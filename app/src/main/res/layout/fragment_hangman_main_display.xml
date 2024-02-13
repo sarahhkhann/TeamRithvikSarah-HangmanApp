@@ -16,7 +16,7 @@
             android:id="@+id/hangmanImageView"
             android:layout_width="599dp"
             android:layout_height="263dp"
-            android:src="@drawable/head"
+            android:src="@drawable/blank_hangman"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight="percent"
             app:layout_constraintHeight_percent="0.8"
@@ -36,7 +36,7 @@
             app:layout_constraintVertical_chainStyle="packed">
 
             <EditText
-                android:id="@+id/letter3"
+                android:id="@+id/letter5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:enabled="false"
@@ -60,7 +60,7 @@
                 app:layout_constraintVertical_bias="0.516" />
 
             <EditText
-                android:id="@+id/letter2"
+                android:id="@+id/letter1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:enabled="false"
@@ -72,7 +72,7 @@
                 app:layout_constraintVertical_bias="0.516" />
 
             <EditText
-                android:id="@+id/letter5"
+                android:id="@+id/letter3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:enabled="false"
@@ -83,7 +83,7 @@
                 app:layout_constraintVertical_bias="0.516" />
 
             <EditText
-                android:id="@+id/letter1"
+                android:id="@+id/letter2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:enabled="false"

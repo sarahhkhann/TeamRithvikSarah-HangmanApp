@@ -15,7 +15,10 @@ class lettersFragment : Fragment() {
         fun newInstance() = lettersFragment()
     }
 
+    private lateinit var viewModel: HangmanViewModel
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        viewModel = ViewModelProvider(requireActivity()).get(HangmanViewModel::class.java)
         val view = inflater.inflate(R.layout.fragment_lettersfragment, container, false)
 
         // Update this list to include all your button IDs
@@ -31,6 +34,10 @@ class lettersFragment : Fragment() {
                 // Directly handle the click event here
                 if (buttonView is Button) {
                     val letter = buttonView.text.toString()
+
+                    //send data to View Model
+                    viewModel.setCurrentLetter(letter)
+
 
                 }
             }

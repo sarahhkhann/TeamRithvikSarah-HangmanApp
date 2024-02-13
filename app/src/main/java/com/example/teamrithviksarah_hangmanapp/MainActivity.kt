@@ -41,6 +41,7 @@ class MainActivity : AppCompatActivity() {
         if (resources.configuration.orientation == Configuration.ORIENTATION_PORTRAIT) {
             transaction.replace(R.id.hangmanGame, hangmanfragment)
             transaction.replace(R.id.selectWords, letters)
+            transaction.commit()
         }
 
 

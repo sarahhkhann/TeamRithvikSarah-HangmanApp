@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         // Example: Replace a fragment
         val transaction = fragmentManager.beginTransaction()
         transaction.replace(R.id.selectWords, lettersfragment())
+        transaction.replace(R.id.hangmanGame, HangmanMainDisplay())
         transaction.commit()
 
 

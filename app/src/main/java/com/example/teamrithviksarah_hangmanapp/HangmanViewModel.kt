@@ -1,5 +1,6 @@
 package com.example.teamrithviksarah_hangmanapp
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -31,11 +32,12 @@ class HangmanViewModel : ViewModel() {
         return _guessesLeft.value
     }
     fun setCurrentLetter(letter: String) {
+        Log.d("SetLetter", letter)
         _currentLetter.value = letter
     }
 
     fun getCurrentLetter(): String? {
-        return _currentLetter.value
+        return currentLetter.value
     }
 
 

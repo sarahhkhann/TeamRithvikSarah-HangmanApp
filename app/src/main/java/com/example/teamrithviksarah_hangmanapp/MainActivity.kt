@@ -23,14 +23,15 @@ class MainActivity : AppCompatActivity() {
 
         if (resources.configuration.orientation == Configuration.ORIENTATION_PORTRAIT) {
             transaction.replace(R.id.hangmanGame, hangmanfragment)
-            transaction.replace(R.id.selectWords, lettersfragment())
+            transaction.replace(R.id.selectWords, lettersFragment())
+            transaction.commit()
         }
 
 
         if (resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) {
             transaction.replace(R.id.hintpanel, fragment)
             transaction.replace(R.id.hangmanGame, hangmanfragment)
-            transaction.replace(R.id.selectWords, lettersfragment())
+            transaction.replace(R.id.selectWords, lettersFragment())
             transaction.commit()
         }
 

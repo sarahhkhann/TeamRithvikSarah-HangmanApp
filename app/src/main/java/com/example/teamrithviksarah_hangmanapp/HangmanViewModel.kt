@@ -14,6 +14,10 @@ class HangmanViewModel : ViewModel() {
     private val _guessesLeft = MutableLiveData<Int>()
     val guessesLeft: LiveData<Int> = _guessesLeft
 
+    //variable to hold the current letter
+    private val _currentLetter = MutableLiveData<String>()
+    val currentLetter: LiveData<String> = _currentLetter
+
     init {
         resetGame()
     }
@@ -25,6 +29,13 @@ class HangmanViewModel : ViewModel() {
 
     fun getGuessesLeft(): Int? {
         return _guessesLeft.value
+    }
+    fun setCurrentLetter(letter: String) {
+        _currentLetter.value = letter
+    }
+
+    fun getCurrentLetter(): String? {
+        return _currentLetter.value
     }
 
 

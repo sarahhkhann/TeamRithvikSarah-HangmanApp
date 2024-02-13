@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import androidx.lifecycle.ViewModelProvider
+import androidx.fragment.app.FragmentManager
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,14 +14,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //set view model
         hangmanViewModel = ViewModelProvider(this).get(HangmanViewModel::class.java)
 
         hangmanViewModel.getGuessesLeft()
+        
+        // Get the FragmentManager
+        val fragmentManager: FragmentManager = supportFragmentManager
 
 
-
-
+        // Example: Replace a fragment
+        val transaction = fragmentManager.beginTransaction()
+        transaction.replace(R.id.selectWords, lettersfragment())
+        transaction.commit()
 
 
     }

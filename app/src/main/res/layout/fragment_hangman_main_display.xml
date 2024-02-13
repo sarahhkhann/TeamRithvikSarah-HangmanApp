@@ -14,12 +14,12 @@
 
         <ImageView
             android:id="@+id/hangmanImageView"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_width="599dp"
+            android:layout_height="263dp"
             android:src="@drawable/head"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight="percent"
             app:layout_constraintHeight_percent="0.8"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -35,10 +35,11 @@
             app:layout_constraintTop_toBottomOf="@id/hangmanImageView"
             app:layout_constraintVertical_chainStyle="packed">
 
-            <TextView
+            <EditText
                 android:id="@+id/letter3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:enabled="false"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.601"
@@ -46,10 +47,11 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.516" />
 
-            <TextView
+            <EditText
                 android:id="@+id/letter4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:enabled="false"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.549"
@@ -57,10 +59,11 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.516" />
 
-            <TextView
+            <EditText
                 android:id="@+id/letter2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:enabled="false"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.396"
@@ -68,20 +71,22 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.516" />
 
-            <TextView
+            <EditText
                 android:id="@+id/letter5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:enabled="false"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.516" />
 
-            <TextView
+            <EditText
                 android:id="@+id/letter1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:enabled="false"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.447"
